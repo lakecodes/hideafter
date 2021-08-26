@@ -4,7 +4,7 @@ Javascript snippet for hiding elements after an element specific 'data-hideafter
 ## Example HTML
 ```html
 <p class="noElementsVisibleStatement hidden">Some text visible when nothing else is visible.</p>
-<span id="hiddenElementsLoader" class="open"><span></span></span>
+<span class="hiddenElementsLoader"><span></span></span>
 <a href="#" class="hidden" data-hideafter="September 25, 2021">Register Now!</a>
 <p class="elementsVisibleStatement hidden">Some other text visible when elements are visible.</p>
 ```
@@ -15,7 +15,7 @@ Javascript snippet for hiding elements after an element specific 'data-hideafter
 	0% {transform: rotateZ(0deg);}
 	100% {transform: rotateZ(359.99deg);}
 }
-#hiddenElementsLoader {
+.hiddenElementsLoader {
 	border: 30px solid transparent;
 	border-left-color: #AAA;
 	display: inline-block;
@@ -28,7 +28,7 @@ Javascript snippet for hiding elements after an element specific 'data-hideafter
 	animation-duration: .75s;
 	animation-iteration-count: infinite;
 }
-	#hiddenElementsLoader span {
+	.hiddenElementsLoader span {
 		display: inline-block;
 		width: 0;
 		height: 0;
