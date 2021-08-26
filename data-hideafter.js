@@ -16,14 +16,6 @@ window.onload = function () {
 			visibleElementCount++;  //  Increase "visibleElementCount" by 1. 
 		}
 	}
-
-
-	//  After finishing up, turn off the loader.
-	if (document.getElementById("hiddenElementsLoader")) {  //  If "hiddenElementsLoader" exists, do something.
-		var loader = document.getElementById("hiddenElementsLoader").classList;  //  Assign variable name.
-		loader.remove("open");  //  Remove "open" CSS class.
-		loader.add("closed");  //  Add "closed" CSS class.
-	}
 	
 	
 	//  Should something be visible when no other elements are visible?
@@ -45,5 +37,12 @@ window.onload = function () {
 				statement.remove('hidden');  //  Remove "hidden" CSS class.
 			}
 		}
+	}
+
+
+	//  After finishing up, turn off the loader.
+	if (document.getElementById("hiddenElementsLoader")) {  //  If "hiddenElementsLoader" exists, do something.
+		var loader = document.getElementById("hiddenElementsLoader").classList;  //  Assign variable name.
+		loader.add("hidden");  //  Add "closed" CSS class.
 	}
 }
