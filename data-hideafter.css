@@ -29,8 +29,7 @@
 	}
 
 
-.hidden,
-#hiddenElementsLoader.closed {
+.hidden {
 	display:none !important;
 	visibility:hidden !important;
 }
