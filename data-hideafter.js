@@ -37,7 +37,10 @@ window.onload = function () {
 
 
 	//  After finishing up, turn off the loader.
-	if (document.getElementById("hiddenElementsLoader")) {  //  If "hiddenElementsLoader" exists, do something.
-		document.getElementById("hiddenElementsLoader").classList.add("hidden");  //  Add "closed" CSS class.
+	if (document.getElementsByClassName("hiddenElementsLoader")) {  //  If "hiddenElementsLoader" elements exist, do something.
+		var hiddenElementsLoaders = document.getElementsByClassName("hiddenElementsLoader"); //  Assign variable name.
+		for (let l = 0; l < hiddenElementsLoaders.length; l++) {  //  For each "hiddenElementsLoader," do something.
+			hiddenElementsLoaders[l].classList.add('hidden');  //  Add "hidden" CSS class.
+		}
 	}
 }
