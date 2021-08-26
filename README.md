@@ -48,3 +48,8 @@ Javascript snippet for hiding elements after an element specific 'data-hideafter
 }
 
 ```
+
+
+## Changes
+###### v2 <2021-08-26>
+- Initial creating in GitHub
