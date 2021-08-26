@@ -42,8 +42,7 @@ Javascript snippet for hiding elements after an element specific 'data-hideafter
 	}
 
 
-.hidden,
-#hiddenElementsLoader.closed {
+.hidden {
 	display:none !important;
 	visibility:hidden !important;
 }
