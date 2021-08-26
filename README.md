@@ -11,5 +11,41 @@ Javascript snippet for hiding elements after an element specific 'data-hideafter
 
 ##  CSS for Quick Reference
 ```css
+@keyframes rotate {
+	0% {transform: rotateZ(0deg);}
+	100% {transform: rotateZ(359.99deg);}
+}
+#hiddenElementsLoader {
+	border: 30px solid transparent;
+	border-left-color: #AAA;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	position: relative;
+	border-radius: 50%;
+	animation-name: rotate;
+	animation-timing-function: linear;
+	animation-duration: .75s;
+	animation-iteration-count: infinite;
+}
+	#hiddenElementsLoader span {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border: 25px solid #FFF;
+		position: absolute;
+		top: -25px;
+		right: -25px;
+		bottom: -25px;
+		left: -25px;
+		border-radius: 50%;
+	}
+
+
+.hidden,
+#hiddenElementsLoader.closed {
+	display:none !important;
+	visibility:hidden !important;
+}
 
 ```
